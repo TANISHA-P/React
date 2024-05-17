@@ -1,0 +1,2 @@
+1. the script tag of React logic should be below the import scripts of React
+2. All the react code is rendered inside the root(consider root like a container jiske ander pura react ka render hoga). So, we are first supposed to create the root (done by - ReactDOM.createRoot( <mention the tag inside which you want to create the root>) )
