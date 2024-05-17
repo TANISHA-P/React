@@ -5,4 +5,24 @@ const heading = React.createElement(
 const heading2 = React.createElement("h5",{},"small data");
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
+
+// creating a DOM structure
+// <div>
+//      <div>
+//          <h1> I am h1 tag </h1>
+//      </div>
+// </div>
+const parentdiv = React.createElement(
+    "div",
+    {id : "parent"},
+    React.createElement(
+        "div",
+        {id : "child"},
+        React.createElement(
+            "h1",
+            {},
+            "I am h1 tag"
+        )
+    )
+)
+root.render(parentdiv);
