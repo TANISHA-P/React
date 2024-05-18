@@ -1,2 +1,16 @@
 1. the script tag of React logic should be below the import scripts of React
 2. All the react code is rendered inside the root(consider root like a container jiske ander pura react ka render hoga). So, we are first supposed to create the root (done by - ReactDOM.createRoot( <mention the tag inside which you want to create the root>) )
+3. What react does is it takes all the power of html to itself, humme bass react code likhna hai for everything(even for element creations). and internally React runs javascript to manipulate the DOM effectively(this is more effective than the DOM manipulation by us via writing HTML code) and generate the web page for us.
+4. React is a library not a framework. So, you can import react for any frontend task. 
+5. package.json is the configuration file for npm.
+6. npm is the package manager(it has all the packages). It manages all the packages that we install in our system.
+7. dev dependencies are those package dependencies which are only required during dev phase and not in production phase. To install a package as a dev dependencies : command - npm install -D <pkg_name>
+8.package.json and package-lock.json difference - package.json holds the version of dependencies for our project that we've installed. whereas package-lock.json holds the versions of all the dependencies(dependencies of the packages we've installed and their dependencies too.) that the packages would require to run. (all the code of these packages are stored inside node_modules directory).
+8. '^' symbol prior to the version no. makes it possible that koi minor version update aya toh automatically the dependency version would be updated.
+
+
+
+npm commands - 
+1. npm init - to initialise npm. This way now we would be able to use all the npm packages by installing them.
+2. npm install -D <pkg_name> - installs package as a dev dependency
+3. npm install <pkg_name> - installs package as a general dependency(dev + production)
