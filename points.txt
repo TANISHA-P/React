@@ -9,6 +9,14 @@
 8. '^' symbol prior to the version no. makes it possible that koi minor version update aya toh automatically the dependency version would be updated.
 9. 'npm' is used to install packages, to run them we use 'npx'
 10. Babel is a library which is a dependency for parcel. It converts the jsx code into ReactElement. Now, react can convert this to js object and eventually to html(during render)
+11. React Component is simply a JS function which return JSX code(React element). Always start with capital ltr.
+    eg. const ReactComp = () => {
+        return <h1>Hello</h1>;
+    }
+    Another way - 
+    const ReactComp = () => <h1>Hello</h1>;
+12. Everything in React is a component. 
+13. To render a component - root.render(<Component_name />), basically <componentName /> karne se voh function run hota hai and the react element is injected at the position where it is called.
 
 npm commands - 
 1. npm init - to initialise npm. This way now we would be able to use all the npm packages by installing them.
