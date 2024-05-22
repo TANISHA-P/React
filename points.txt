@@ -7,10 +7,13 @@
 7. dev dependencies are those package dependencies which are only required during dev phase and not in production phase. To install a package as a dev dependencies : command - npm install -D <pkg_name>
 8.package.json and package-lock.json difference - package.json holds the version of dependencies for our project that we've installed. whereas package-lock.json holds the versions of all the dependencies(dependencies of the packages we've installed and their dependencies too.) that the packages would require to run. (all the code of these packages are stored inside node_modules directory).
 8. '^' symbol prior to the version no. makes it possible that koi minor version update aya toh automatically the dependency version would be updated.
-
-
+9. 'npm' is used to install packages, to run them we use 'npx'
+10. Babel is a library which is a dependency for parcel. It converts the jsx code into ReactElement. Now, react can convert this to js object and eventually to html(during render)
 
 npm commands - 
 1. npm init - to initialise npm. This way now we would be able to use all the npm packages by installing them.
 2. npm install -D <pkg_name> - installs package as a dev dependency
 3. npm install <pkg_name> - installs package as a general dependency(dev + production)
+4. npx <pkg> - runs the pkg package. (eg - npx parcel index.html) - dev build
+   npx parcel build index.html - production build
+5. inside package.json -> scripts, you can create your own scripts that will run when initiated and to run those scripts - npm run <script_name>

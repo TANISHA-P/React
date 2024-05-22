@@ -1,1 +1,3 @@
-/node_modules
+/R1/node_modules
+/R1/dist
+/R1/.parcel-cache
