@@ -17,6 +17,15 @@
     const ReactComp = () => <h1>Hello</h1>;
 12. Everything in React is a component. 
 13. To render a component - root.render(<Component_name />), basically <componentName /> karne se voh function run hota hai and the react element is injected at the position where it is called.
+14. You can run any javascript code inside jsx by just putting it inside {} braces.
+    eg - const temp = (
+        <h1>
+            {console.log("hii)};
+            {some_react_element};
+        </h1>
+    )
+15. Passing a prop to a component is just - passing an argument to a JS function. so, props=arguments and component=JS function. When we pass props, all those variables with values get converted into a JS object at the place of function defination.
+16. always add key inside the component.
 
 npm commands - 
 1. npm init - to initialise npm. This way now we would be able to use all the npm packages by installing them.

@@ -1,3 +1,6 @@
 /R1/node_modules
+/R2/node_modules
 /R1/dist
+/R2/dist
 /R1/.parcel-cache
+/R2/.parcel-cache
