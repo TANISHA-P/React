@@ -1,0 +1,11 @@
+{
+  "name": "food-app",
+  "version": "1.0.0",
+  "description": "Food App",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Tanisha Pareek",
+  "license": "ISC"
+}
